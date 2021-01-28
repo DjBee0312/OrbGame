@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 376292292005975870}
   - component: {fileID: 376292292005975865}
   - component: {fileID: 376292292005975864}
-  - component: {fileID: 376292292005975867}
-  - component: {fileID: 376292292005975866}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Planet
@@ -135,32 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f1b26e84dcd9d4ba99d65f5a196be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &376292292005975867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376292292005975861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18f1b26e84dcd9d4ba99d65f5a196be1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &376292292005975866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376292292005975861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6284a38de9d7d304eabd4524f70fd36a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minX: -9
-  minY: -4.5
-  maxX: 9
-  maxY: 4.5
-  restartPanel: {fileID: 0}
+  DeathEffect: {fileID: 0}
+  SlectionRandomEffect: {fileID: 0}

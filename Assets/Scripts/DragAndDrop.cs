@@ -12,14 +12,13 @@ public class DragAndDrop : MonoBehaviour
 
     public GameObject DeathEffect;
     public GameObject SlectionRandomEffect;
-    // Start is called before the first frame update
+
     void Start()
     {
         sg = GameObject.FindGameObjectWithTag("SG").GetComponent<StartGame>();
         collider = GetComponent<Collider2D>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.touchCount > 0)

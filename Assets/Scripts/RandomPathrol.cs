@@ -27,7 +27,6 @@ public class RandomPathrol : MonoBehaviour
     void Start()
     {
         targetPosition = GetRandomPosition();
-
     }
 
     // Update is called once per frame

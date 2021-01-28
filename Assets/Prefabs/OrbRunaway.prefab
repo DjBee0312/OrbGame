@@ -83,6 +83,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f1b26e84dcd9d4ba99d65f5a196be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathEffect: {fileID: 7885138761651411890, guid: 5a44e92880753c749a20936eeb177f0b,
+    type: 3}
+  SlectionRandomEffect: {fileID: 0}
 --- !u!1 &6398784190959345300
 GameObject:
   m_ObjectHideFlags: 0

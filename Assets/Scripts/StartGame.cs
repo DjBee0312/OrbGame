@@ -6,17 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    private Score _score;
     public GameObject restartPanel;
-
-    private void Start()
-    {
-        _score = GameObject.Find("Canvas").GetComponent<Score>();
-    }
 
     public void GameOver()
     {
-        _score.hasLost = true;
         restartPanel.SetActive(true);
     }
     public void GoToGameScene()

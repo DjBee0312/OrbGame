@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6677892340753741478}
   - component: {fileID: -4635063393036038575}
   - component: {fileID: 5384135538871106142}
+  - component: {fileID: 5657634960309875045}
   m_Layer: 0
   m_Name: orbLove
   m_TagString: Planet
@@ -120,7 +121,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 1.75
 --- !u!114 &5384135538871106142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +137,17 @@ MonoBehaviour:
   DeathEffect: {fileID: 7885138761651411890, guid: 5a44e92880753c749a20936eeb177f0b,
     type: 3}
   SlectionRandomEffect: {fileID: 0}
+--- !u!114 &5657634960309875045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968631885858140581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6936c26dc71b8c048b7adde0c05df22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherPlanet: {fileID: 0}
+  speed: 0

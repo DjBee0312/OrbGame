@@ -9,7 +9,13 @@ public class StartGame : MonoBehaviour
     public GameObject restartPanel;
     public void GameOver()
     {
+        Invoke("Delay", 1.5f);
+    }
+
+    private void Delay()
+    {
         restartPanel.SetActive(true);
+        Time.timeScale = 0;
     }
     public void GoToGameScene()
     {

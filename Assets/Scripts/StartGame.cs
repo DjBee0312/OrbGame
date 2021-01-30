@@ -7,14 +7,13 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
     public GameObject restartPanel;
-
     public void GameOver()
     {
         restartPanel.SetActive(true);
     }
     public void GoToGameScene()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Level 1");
     }
     
     public void GoToMainMenu()

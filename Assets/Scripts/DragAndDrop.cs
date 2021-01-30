@@ -54,7 +54,7 @@ public class DragAndDrop : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Planet")
+        if (other.CompareTag("Planet"))
         {
             Instantiate(DeathEffect, transform.position, Quaternion.identity);
             sg.GameOver();

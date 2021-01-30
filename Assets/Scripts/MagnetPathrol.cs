@@ -11,6 +11,23 @@ public class MagnetPathrol : MonoBehaviour
 
     private void FixedUpdate()
     {
+        CalculateSpeed();
         transform.position = Vector2.MoveTowards(transform.position, otherPlanet.position, speed * Time.deltaTime);
+    }
+
+    private void CalculateSpeed()
+    {
+        float dist = Vector3.Distance(otherPlanet.position, transform.position);
+        if (dist < 3)
+        {
+            print("Distance to other: " + dist);
+            speed = 1;
+        }
+        else
+        {
+            print("Distance to other: " + dist);
+            speed = dist * 0.5f;
+        }
+        
     }
 }

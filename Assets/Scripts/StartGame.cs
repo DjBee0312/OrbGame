@@ -19,7 +19,7 @@ public class StartGame : MonoBehaviour
     }
     public void GoToGameScene()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Levels");
     }
     
     public void GoToMainMenu()

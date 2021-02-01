@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,8 +11,9 @@ public class Timer : MonoBehaviour
     public GameObject nextLevelPanel;
     public Text timeText;
 
-    void Start()
+    private void Awake()
     {
+        Time.timeScale = 1;
         timerIsRunning = true;
     }
     
@@ -39,6 +41,6 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);  
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
-        timeText.text = string.Format("Survive for {0:00} seconds", seconds);
+        timeText.text = string.Format("Survive for {0:00} seconds", seconds+1);
     }
 }

@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14107c9e812fcf54eac807f94cd2a82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
+  timeRemaining: 15
   nextLevelPanel: {fileID: 1053232384}
   timeText: {fileID: 1038786519}
 --- !u!4 &296544144

@@ -18,7 +18,7 @@ public class MagnetPathrol : MonoBehaviour
     private void CalculateSpeed()
     {
         float dist = Vector3.Distance(otherPlanet.position, transform.position);
-        if (dist < 3)
+        if (dist < 4)
         {
             print("Distance to other: " + dist);
             speed = 1;
@@ -26,7 +26,7 @@ public class MagnetPathrol : MonoBehaviour
         else
         {
             print("Distance to other: " + dist);
-            speed = dist * 0.5f;
+            speed = dist * 0.25f;
         }
         
     }

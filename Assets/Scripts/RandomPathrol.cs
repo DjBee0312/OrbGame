@@ -16,12 +16,12 @@ public class RandomPathrol : MonoBehaviour
     private Vector2 targetPosition;
 
     private float minSpeed = 0.5f;
-    private float maxSpeed = 2;
+    private float maxSpeed = 3;
     private float speed;
 
     //public GameObject restartPanel;
     
-    private float secondsToMaxDifficulty = 60;
+    private float secondsToMaxDifficulty = 30;
 
     // Start is called before the first frame update
     void Start()

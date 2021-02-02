@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -37893700956112646}
   - component: {fileID: 2322818445514145761}
   - component: {fileID: -5106258423283591582}
+  - component: {fileID: 4258909603962814357}
   m_Layer: 0
   m_Name: orbMagnet 1
   m_TagString: Planet
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6606123394731648465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -134,8 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f1b26e84dcd9d4ba99d65f5a196be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathEffect: {fileID: 7885138761651411890, guid: 5a44e92880753c749a20936eeb177f0b,
-    type: 3}
   SlectionRandomEffect: {fileID: 3778248643738474554, guid: e9df5efca1967434991d926009866ba7,
     type: 3}
 --- !u!114 &-5106258423283591582
@@ -152,3 +151,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   otherPlanet: {fileID: 0}
   speed: 1
+--- !u!114 &4258909603962814357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6606123394731648465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7df72da55b045648a0d192151379868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathEffect: {fileID: 7885138761651411890, guid: 5a44e92880753c749a20936eeb177f0b,
+    type: 3}

@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
     public GameObject restartPanel;
+    
     public void GameOver()
     {
-        Invoke("Delay", 1.5f);
+        Invoke("Delay", 1);
     }
 
     private void Delay()

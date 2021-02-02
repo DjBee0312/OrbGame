@@ -12,7 +12,7 @@ public class CloseTutorialPanel : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    public void ClosePanel()
+    public void ClosePanel()    
     {
         tutorialPanel.SetActive(false);
         Time.timeScale = 1;

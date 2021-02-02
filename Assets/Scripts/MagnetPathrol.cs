@@ -7,7 +7,7 @@ public class MagnetPathrol : MonoBehaviour
 {
     public Transform otherPlanet;
 
-    public float speed;
+    private float speed;
 
     private void FixedUpdate()
     {

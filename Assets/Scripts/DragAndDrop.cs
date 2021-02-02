@@ -8,14 +8,11 @@ public class DragAndDrop : MonoBehaviour
     private bool moveAllowed;
 
     private Collider2D collider;
-    private StartGame sg;
 
-    public GameObject DeathEffect;
     public GameObject SlectionRandomEffect;
 
     void Start()
     {
-        sg = GameObject.FindGameObjectWithTag("SG").GetComponent<StartGame>();
         collider = GetComponent<Collider2D>();
     }
     
@@ -49,16 +46,6 @@ public class DragAndDrop : MonoBehaviour
                 moveAllowed = false;
             }
 
-        }
-    }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Planet"))
-        {
-            Instantiate(DeathEffect, transform.position, Quaternion.identity);
-            sg.GameOver();
-            Destroy(other.gameObject);
         }
     }
 }

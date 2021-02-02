@@ -8,6 +8,7 @@ public class NextLevel : MonoBehaviour
     public void LoadNextLevel()
     {
         int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        Debug.Log(nextLevel);
         SceneManager.LoadScene(nextLevel);
         PlayerPrefs.SetInt("levelReached", nextLevel);
     }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5434858479585864772}
   - component: {fileID: -5085285469521702475}
   - component: {fileID: 803357459203059432}
+  - component: {fileID: -766475404522232878}
   m_Layer: 0
   m_Name: orabrandom
   m_TagString: Planet
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5826635772940339240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -134,8 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f1b26e84dcd9d4ba99d65f5a196be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathEffect: {fileID: 7885138761651411890, guid: 5a44e92880753c749a20936eeb177f0b,
-    type: 3}
   SlectionRandomEffect: {fileID: 2121520490403708131, guid: 4073923772ab1e94d9ebc363b57e98b7,
     type: 3}
 --- !u!114 &803357459203059432
@@ -154,3 +153,17 @@ MonoBehaviour:
   minY: -4.5
   maxX: 9
   maxY: 4.5
+--- !u!114 &-766475404522232878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826635772940339240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7df72da55b045648a0d192151379868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathEffect: {fileID: 7885138761651411890, guid: 5a44e92880753c749a20936eeb177f0b,
+    type: 3}

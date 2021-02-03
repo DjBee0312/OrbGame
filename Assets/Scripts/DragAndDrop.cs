@@ -10,6 +10,7 @@ public class DragAndDrop : MonoBehaviour
     private Collider2D collider;
 
     public GameObject SlectionRandomEffect;
+    public GameObject MovingRandomEffect;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class DragAndDrop : MonoBehaviour
             {
                 if (moveAllowed)
                 {
+                    Instantiate(MovingRandomEffect, transform.position, Quaternion.identity);
                     transform.position = new Vector2(touchPosition.x, touchPosition.y);
                 }
             }

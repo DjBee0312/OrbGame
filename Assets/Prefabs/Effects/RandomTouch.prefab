@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2121520490403708128}
   - component: {fileID: 2121520490403708129}
   m_Layer: 0
-  m_Name: RandomTouch 1
+  m_Name: RandomTouch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

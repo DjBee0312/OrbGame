@@ -387,6 +387,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5085285469521702475, guid: 01b98283f53bc054397dab2a47877d95,
+        type: 3}
+      propertyPath: MovingRandomEffect
+      value: 
+      objectReference: {fileID: 1991863506136909872, guid: 8cf240cd614a4cf408e0a0acce68dfe4,
+        type: 3}
     - target: {fileID: 5826635772940339240, guid: 01b98283f53bc054397dab2a47877d95,
         type: 3}
       propertyPath: m_Name
@@ -789,6 +795,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5085285469521702475, guid: 01b98283f53bc054397dab2a47877d95,
+        type: 3}
+      propertyPath: MovingRandomEffect
+      value: 
+      objectReference: {fileID: 1991863506136909872, guid: 8cf240cd614a4cf408e0a0acce68dfe4,
+        type: 3}
     - target: {fileID: 5826635772940339240, guid: 01b98283f53bc054397dab2a47877d95,
         type: 3}
       propertyPath: m_Name
@@ -868,6 +880,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5085285469521702475, guid: 01b98283f53bc054397dab2a47877d95,
+        type: 3}
+      propertyPath: MovingRandomEffect
+      value: 
+      objectReference: {fileID: 1991863506136909872, guid: 8cf240cd614a4cf408e0a0acce68dfe4,
+        type: 3}
     - target: {fileID: 5434858479585864772, guid: 01b98283f53bc054397dab2a47877d95,
         type: 3}
       propertyPath: m_Radius
@@ -1286,6 +1304,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5085285469521702475, guid: 01b98283f53bc054397dab2a47877d95,
+        type: 3}
+      propertyPath: MovingRandomEffect
+      value: 
+      objectReference: {fileID: 1991863506136909872, guid: 8cf240cd614a4cf408e0a0acce68dfe4,
+        type: 3}
     - target: {fileID: 5826635772940339240, guid: 01b98283f53bc054397dab2a47877d95,
         type: 3}
       propertyPath: m_Name

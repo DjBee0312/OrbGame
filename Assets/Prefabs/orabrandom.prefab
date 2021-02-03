@@ -137,6 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SlectionRandomEffect: {fileID: 2121520490403708131, guid: 4073923772ab1e94d9ebc363b57e98b7,
     type: 3}
+  MovingRandomEffect: {fileID: 1991863506136909872, guid: 8cf240cd614a4cf408e0a0acce68dfe4,
+    type: 3}
 --- !u!114 &803357459203059432
 MonoBehaviour:
   m_ObjectHideFlags: 0

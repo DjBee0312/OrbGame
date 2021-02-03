@@ -137,6 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SlectionRandomEffect: {fileID: 2476087935170290841, guid: 0981aac3ac5019c479a7fd6e92bb7c25,
     type: 3}
+  MovingRandomEffect: {fileID: 5126695124089899537, guid: 5a1ccf2a7cf9d0c41839e2787e321306,
+    type: 3}
 --- !u!114 &5657634960309875045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherPlanet: {fileID: 0}
-  speed: 1
 --- !u!114 &5392194302413749757
 MonoBehaviour:
   m_ObjectHideFlags: 0

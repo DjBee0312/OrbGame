@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Planet
   - SG
+  - Projectile
+  - Boss
   layers:
   - Default
   - TransparentFX

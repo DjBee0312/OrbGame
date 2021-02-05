@@ -8,6 +8,7 @@ public class DragAndDrop : MonoBehaviour
     private bool moveAllowed;
 
     private Collider2D collider;
+    private SoundManager sound;
 
     public GameObject SlectionRandomEffect;
     public GameObject MovingRandomEffect;
@@ -15,6 +16,7 @@ public class DragAndDrop : MonoBehaviour
     void Start()
     {
         collider = GetComponent<Collider2D>();
+        sound = FindObjectOfType<SoundManager>();
     }
     
     void Update()
@@ -29,6 +31,7 @@ public class DragAndDrop : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (collider == touchedCollider)
                 {
+                    sound.Play("Touch");
                     Instantiate(SlectionRandomEffect, transform.position, Quaternion.identity);
                     moveAllowed = true;
                 }

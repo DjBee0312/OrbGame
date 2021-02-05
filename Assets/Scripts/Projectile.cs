@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Projectile : MonoBehaviour
 {
-    /*
+    
     private Destroy ds;
+    private float destroyTime = 5f;
     
     private GameObject[] planets;
 
-    private Vector2 target;
+    private Vector3 target;
+    private Vector3 direction;
 
     public float speed;
 
@@ -26,13 +29,13 @@ public class Projectile : MonoBehaviour
     {
         int rand = Random.Range(0, planets.Length);
         target = planets[rand].transform.position;
+        direction = (target - transform.position).normalized;
     }
     
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-        transform.Translate(target.transform.forward * Time.deltaTime * projectileSpeed, Space.Self);
-        Destroy(gameObject, 5);
-        Instantiate(ds.DeathEffect, transform.position, Quaternion.identity, 5f);
-    } */
+        transform.position += direction * (speed * Time.deltaTime);
+        Destroy(gameObject, destroyTime);
+    } 
+    
 }

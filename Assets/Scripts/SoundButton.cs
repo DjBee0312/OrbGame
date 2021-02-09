@@ -1,11 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class SoundButton : MonoBehaviour
 {
+    private SoundManager soundManager;
+    private Button button;
+
+    private void Start()
+    {
+        button = GetComponent<Button>();
+        button.onClick.AddListener(PlayClick);
+        soundManager = FindObjectOfType<SoundManager>();
+    }
+
     public void PlayClick()
     {
-        FindObjectOfType<SoundManager>().Play("Click");
+        soundManager.Play("Click");
     }
 }

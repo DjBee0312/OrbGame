@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
@@ -30,5 +28,4 @@ public class Destroy : MonoBehaviour
             FindObjectOfType<SoundManager>().Play("OrbDestruction");
         }
     }
-
 }

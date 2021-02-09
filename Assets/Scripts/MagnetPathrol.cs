@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MagnetPathrol : MonoBehaviour
+public class MagnetPathrol : MonoBehaviour, IOrbLineHolder
 {
     public Transform otherPlanet;
 
     private float speed;
+
+    public event Action OnDeath;
 
     private void FixedUpdate()
     {
@@ -29,5 +29,10 @@ public class MagnetPathrol : MonoBehaviour
             speed = dist * 0.25f;
         }
         
+    }
+
+    private void OnDestroy()
+    {
+        OnDeath?.Invoke();  
     }
 }

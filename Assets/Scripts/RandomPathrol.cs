@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class RandomPathrol : MonoBehaviour
@@ -19,17 +15,14 @@ public class RandomPathrol : MonoBehaviour
     private float maxSpeed = 3;
     private float speed;
 
-    //public GameObject restartPanel;
     
     private float secondsToMaxDifficulty = 30;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         targetPosition = GetRandomPosition();
     }
-
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         if ((Vector2) transform.position != targetPosition)

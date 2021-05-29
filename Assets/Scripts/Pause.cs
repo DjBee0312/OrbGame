@@ -3,18 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
-    public GameObject pausePanel;
+    [SerializeField] private GameObject pausePanel;
+
+    [SerializeField] private OrbController orbController;
 
     public void PauseGame()
     {
         pausePanel.SetActive(true);
         Time.timeScale = 0;
+        orbController.ChangeMoving(false);
     }
 
     public void Resume()
     {
         pausePanel.SetActive(false);
         Time.timeScale = 1;
+        orbController.ChangeMoving(true);
     }
 
     public void GoToMainMenu()

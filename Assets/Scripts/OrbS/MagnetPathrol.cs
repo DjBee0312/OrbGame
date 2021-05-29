@@ -20,12 +20,10 @@ public class MagnetPathrol : MonoBehaviour, IOrbLineHolder
         float dist = Vector3.Distance(otherPlanet.position, transform.position);
         if (dist < 4)
         {
-            print("Distance to other: " + dist);
             speed = 1;
         }
         else
         {
-            print("Distance to other: " + dist);
             speed = dist * 0.25f;
         }
         

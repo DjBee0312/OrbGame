@@ -30,7 +30,7 @@ public class DragAndDrop : MonoBehaviour
                 Touch touch = Input.GetTouch(0);
                 Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
-                if (touch.phase == TouchPhase.Began)
+                if (Input.GetMouseButtonDown(0))
                 {
                     Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                     if (collider == touchedCollider)
@@ -41,7 +41,7 @@ public class DragAndDrop : MonoBehaviour
                     }
                 }
 
-                if (touch.phase == TouchPhase.Moved)
+                if (Input.GetMouseButton(0))
                 {
                     if (moveAllowed)
                     {
@@ -50,7 +50,7 @@ public class DragAndDrop : MonoBehaviour
                     }
                 }
 
-                if (touch.phase == TouchPhase.Ended)
+                if (Input.GetMouseButtonUp(0))
                 {
                     moveAllowed = false;
                 }

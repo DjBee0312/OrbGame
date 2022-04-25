@@ -60,3 +60,13 @@ crashlytics-build.properties
 
 # Idea
 .idea
+/*.csproj
+/*.sln
+/obj
+/.vs
+/Library
+/Temp
+/*.apk
+/*.aab
+/.idea
+/Logs
